@@ -1,0 +1,242 @@
+:root{
+    --dark-blue: #212A3E;
+    --medium-blue: #394867;
+    --grey: #9BA4B5;
+    --blue-white: #F1F6F9;
+    --orange: #C06014;
+}
+/* PC */
+@media(min-width: 1025px){
+}
+
+/* tablet */
+@media(min-width: 740px) and (max-width: 1024px){
+    /* padding, magin */
+    .header_top, .header_bot, #footer, #footer_sub{
+        padding: 0 5%;
+    }
+    #tim_ve, #content{
+        margin: 0 5%;
+    }
+    /* end_padding, magin */
+
+    /* header */
+    .nav_logo{
+        display: none;
+    }
+    .header_bot .nav li,
+    .header_bot .nav_user li{
+        padding: 0 7px;
+    }
+    /* end_header */
+
+    /* search_ticket */
+    .starting_point, .stop_point, .select_date, .search_tk_btn {
+        padding: 0;
+        margin: 0;
+    }
+    .select_date{
+        display: block;
+    }
+    .ngay_di,.ngay_ve,.ticket_type{
+        margin: 0;
+    }
+    .search_tk_btn{
+        margin-top: 40px;
+    }
+    /* end_search_ticket */
+
+    /* content */
+    .list_advantage .advantage{
+        line-height: 1.6;
+        margin: 20px 8px;
+    }
+    .list_province .province{
+        width: 48%;
+    }
+    .text_province{
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.4);
+    }
+    .text_province> *{
+        transform: translateY(0);
+    }
+    .province_btn{
+        font-size: 1.1em;
+        opacity: 1;
+        background-color: var(--orange);
+        color: var(--blue-white);
+    }
+    /* end_content */
+
+    /* footer */
+    footer_left{
+        padding: 0 10px;
+    }
+    .footer_right{
+        display: block;
+    }
+    .footer_right_1,
+    .footer_right_2{
+        width: auto;
+        padding: 0 10px;
+    }
+    .footer_input{
+        display: block;
+    }
+    .footer_icon{
+        justify-content: start;
+    }
+    #footer{
+        padding-bottom: 20px;
+    }
+    .footer_icon .fa-brands{
+        font-size: 1.6em;
+    }
+    /* end_footer */
+}
+
+/* mobile */
+@media(max-width: 739px){
+    /* padding, magin */
+    .header_top, .header_bot, #footer, #footer_sub{
+        padding: 0 5%;
+    }
+    #tim_ve, #content{
+        margin: 0 5%;
+    }
+    /* end_padding, magin */
+
+    /* search_ticket */
+    .starting_point, .stop_point, .select_date, .search_tk_btn {
+        padding: 0;
+        margin: 0;
+    }
+    .select_date{
+        display: block;
+    }
+    .ngay_di,.ngay_ve,.ticket_type{
+        margin: 0;
+    }
+    .search_tk_btn{
+        margin-top: 40px;
+    }
+    /* end_search_ticket */
+
+    /* content */
+    .list_advantage{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .list_advantage .advantage{
+        width: 45%;
+        margin: 20px 0;
+    }
+    .list_province .province{
+        width: 100%;
+    }
+    .text_province{
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.4);
+    }
+    .text_province> *{
+        transform: translateY(0);
+    }
+    .province_btn{
+        font-size: 1.1em;
+        opacity: 1;
+        background-color: var(--orange);
+        color: var(--blue-white);
+    }
+    /* end_content */
+
+    /* footer */
+    #footer{
+        display: block;
+        padding: 15px 5%;
+    }
+    .footer_right{
+        display: block;
+        width: 100%;
+    }
+    .footer_right_1{
+        width: auto;
+    }
+    .footer_left{
+        margin: 0;
+    }
+    .footer_right_1, .footer_right_2{
+        margin: 25px 0 0 0;
+    }
+    .wave-group .input {
+        width: 300px;
+    }
+    .wave-group .bar{
+        width: 300px;
+    }
+    .footer_icon .fa-brands{
+        font-size: 1.6em;
+    }
+    #footer_sub a,
+    #footer_sub p{
+        line-height: 30px;
+        font-size: 6px;
+    }
+    /* end_footer */
+    /* header_mobile */
+    .header_bot .menu_mobile{
+        display: block;
+    }
+    #slider{
+        margin-top: 69px;
+    }
+    .header_top{
+        display: none;
+    }
+    .header_bot .nav, .header_bot .nav_user{
+        display: none;
+    }
+    .header_bot{
+        padding: 0 10%;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 888;
+    }
+    .header_bot>ul>a{
+        line-height: 70px;
+        text-decoration: none;
+        font-size: 2em;
+        text-align: center;
+        color: #fff;
+    }
+    .side_bar{
+        position: fixed;
+        z-index: 999;
+        width: 75%;
+        display: none;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        background-color: var(--medium-blue);
+        flex-direction: column;
+        box-shadow: 20px 0px 50px 100px rgba(0,0,0,0.3);
+    }
+    .side_bar li{
+        padding-left: 30px;
+        list-style: none;
+        width: 100%;
+    }
+    .side_bar li:hover{
+        background-color: var(--orange);
+    }
+    .side_bar li a{
+        color: var(--blue-white);
+        text-decoration: none;
+        font-size: 2em;
+        line-height: 70px;
+        width: 100%;
+    }
+    /* end_header_mobile */
+}
